@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "base": "https://bmkaraduman.github.io/helalapp/friday/",
+  "backgrounds": [
+    {
+      "id": "istanbul-terrace-sunset",
+      "file": "istanbul-terrace-sunset.webp",
+      "thumb": "thumbs/istanbul-terrace-sunset.jpg",
+      "free": true
+    },
+    {
+      "id": "kaaba-sunset",
+      "file": "kaaba-sunset.webp",
+      "thumb": "thumbs/kaaba-sunset.jpg",
+      "free": true
+    },
+    {
+      "id": "mosque-courtyard-night",
+      "file": "mosque-courtyard-night.webp",
+      "thumb": "thumbs/mosque-courtyard-night.jpg",
+      "free": true
+    },
+    {
+      "id": "mosque-interior-prayer",
+      "file": "mosque-interior-prayer.webp",
+      "thumb": "thumbs/mosque-interior-prayer.jpg",
+      "free": true
+    },
+    {
+      "id": "istanbul-sunset-quran",
+      "file": "istanbul-sunset-quran.webp",
+      "thumb": "thumbs/istanbul-sunset-quran.jpg",
+      "free": false
+    },
+    {
+      "id": "jerusalem-dome",
+      "file": "jerusalem-dome.webp",
+      "thumb": "thumbs/jerusalem-dome.jpg",
+      "free": false
+    },
+    {
+      "id": "mecca-window-cat",
+      "file": "mecca-window-cat.webp",
+      "thumb": "thumbs/mecca-window-cat.jpg",
+      "free": false
+    },
+    {
+      "id": "istanbul-bougainvillea",
+      "file": "istanbul-bougainvillea.webp",
+      "thumb": "thumbs/istanbul-bougainvillea.jpg",
+      "free": false
+    },
+    {
+      "id": "prayer-rug-quran",
+      "file": "prayer-rug-quran.webp",
+      "thumb": "thumbs/prayer-rug-quran.jpg",
+      "free": false
+    },
+    {
+      "id": "quran-roses",
+      "file": "quran-roses.webp",
+      "thumb": "thumbs/quran-roses.jpg",
+      "free": false
+    },
+    {
+      "id": "ablution-fountain",
+      "file": "ablution-fountain.webp",
+      "thumb": "thumbs/ablution-fountain.jpg",
+      "free": false
+    },
+    {
+      "id": "ablution-illustration",
+      "file": "ablution-illustration.webp",
+      "thumb": "thumbs/ablution-illustration.jpg",
+      "free": false
+    },
+    {
+      "id": "child-rain-mosque",
+      "file": "child-rain-mosque.webp",
+      "thumb": "thumbs/child-rain-mosque.jpg",
+      "free": false
+    },
+    {
+      "id": "jerusalem-child-dove",
+      "file": "jerusalem-child-dove.webp",
+      "thumb": "thumbs/jerusalem-child-dove.jpg",
+      "free": false
+    },
+    {
+      "id": "mountain-lake-sunrise",
+      "file": "mountain-lake-sunrise.webp",
+      "thumb": "thumbs/mountain-lake-sunrise.jpg",
+      "free": false
+    },
+    {
+      "id": "honeycomb",
+      "file": "honeycomb.webp",
+      "thumb": "thumbs/honeycomb.jpg",
+      "free": false
+    },
+    {
+      "id": "coral-reef",
+      "file": "coral-reef.webp",
+      "thumb": "thumbs/coral-reef.jpg",
+      "free": false
+    },
+    {
+      "id": "gaza-solidarity",
+      "file": "gaza-solidarity.webp",
+      "thumb": "thumbs/gaza-solidarity.jpg",
+      "free": false
+    }
+  ]
+}
