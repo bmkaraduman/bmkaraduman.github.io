@@ -1,22 +1,23 @@
 <!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Helal Rehber – Gizlilik Politikası</title>
 <style>body{font:16px/1.6 -apple-system,system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;color:#1d1d1f}h1{font-size:1.6em}h2{font-size:1.15em;margin-top:1.6em}a{color:#0d6b52}.m{color:#666;font-size:.9em}</style></head><body>
 <h1>Helal Rehber – Gizlilik Politikası</h1>
-<p class="m">Son güncelleme: 22 Eylül 2026 · Geliştirici: Metin Karaduman</p>
+<p class="m">Son güncelleme: 21 Ekim 2026 · Geliştirici: Metin Karaduman</p>
 <p>Helal Rehber, kişisel verini asgari düzeyde işleyecek şekilde tasarlandı. Hesap açılmaz, sunucumuzda kullanıcı profili tutulmaz. Aşağıda hangi verinin hangi amaçla, nereye gittiği yazıyor.</p>
+
+<h2>Yapay zekâ özellikleri ve sunucumuz</h2>
+<p>Ürün tarama ve yapay zekâ Cuma mesajı, Google Cloud (Firebase, Frankfurt bölgesi) üzerinde çalışan sunucumuz aracılığıyla Anthropic'in Claude API'sine iletilir. Sunucu, isteği yalnızca iletmek için işler; fotoğrafı ya da metni saklamaz. Kötüye kullanımı önlemek için cihaz ilk istekte anonim bir Firebase hesabı alır (adın, e-postan ya da telefon numaran istenmez; yalnızca rastgele bir kimlik) ve bu kimlik için yalnızca günlük istek sayıları tutulur. İsteklerin gerçek uygulamadan geldiği Apple App Attest / Google Play Integrity ile doğrulanır (App Check).</p>
 
 <h2>Konum</h2>
 <p>Namaz vakitleri, kıble yönü ve yakındaki mescit/restoran listesi için kullanılır. Vakitler ve kıble <strong>cihazda</strong> hesaplanır, konum hiçbir yere gönderilmez. Yakındaki yerler için konum yalnızca o arama anında Google Places API'ye iletilir; tarafımızca saklanmaz.</p>
 
 <h2>Fotoğraflar (ürün tarama)</h2>
-<p>Çektiğin ürün fotoğrafı, içindekileri okuyup değerlendirmek için OpenAI API'ye gönderilir. Fotoğraf cihazında saklanır; sunucumuza yüklenmez. Tarama geçmişi yalnızca cihazında tutulur ve dilediğinde silebilirsin.</p>
+<p>Çektiğin ürün fotoğrafı, içindekileri okuyup değerlendirmek için sunucumuz üzerinden Anthropic Claude API'ye gönderilir. Fotoğraf sunucuda saklanmaz; yalnızca cihazında kalır. Tarama geçmişi yalnızca cihazında tutulur ve dilediğinde silebilirsin.</p>
 
 <h2>Rehber</h2>
 <p>Cuma mesajında kişi seçimi iOS'un sistem seçicisiyle yapılır; uygulama rehberine erişim izni istemez ve yalnızca seçtiğin tek kişinin adını, o kartı üretmek için kullanır. Kişi verisi saklanmaz.</p>
 
 <h2>Cuma mesajı üretimi</h2>
-<p>"Bana bir mesaj yaz" özelliğinde seçilen dil ve (varsa) seçtiğin isim OpenAI API'ye gönderilir. Başka kişisel veri iletilmez.</p>
-<h2>Rüya tabiri</h2>
-<p>Rüya tabiri özelliğinde yazdığın rüya metni, yorumlanması için OpenAI API'ye gönderilir. Metin sunucumuza yüklenmez; yorumlar ve geçmiş rüyalar yalnızca cihazında tutulur. Yorum yapay zekâ tarafından üretilir, kesin bilgi ya da dinî hüküm değildir.</p>
+<p>"Bana bir mesaj yaz" özelliğinde yalnızca seçilen dil ve mesajın tek bir kişiye mi yazılacağı bilgisi sunucumuz üzerinden Anthropic Claude API'ye gönderilir. Seçtiğin kişinin adı gönderilmez; ad yalnızca cihazda karta yazılır.</p>
 
 <h2>Bildirimler</h2>
 <p>Günlük ayet/hadis bildirimi cihazda yerel olarak planlanır; sunucu itmeli bildirim yoktur.</p>
@@ -29,7 +30,8 @@
 
 <h2>Üçüncü taraf hizmetler</h2>
 <ul>
-<li>OpenAI API – ürün fotoğrafı analizi, mesaj üretimi ve rüya tabiri</li>
+<li>Anthropic Claude API – ürün fotoğrafı analizi ve mesaj üretimi (sunucumuz üzerinden)</li>
+<li>Google Firebase (Cloud Functions, Authentication, App Check) – yapay zekâ sunucusu, anonim kimlik, uygulama doğrulaması</li>
 <li>Google Places API – yakındaki mescit ve restoranlar</li>
 <li>Google AdMob – reklamlar (ücretsiz sürüm)</li>
 <li>Apple StoreKit – abonelik</li>
